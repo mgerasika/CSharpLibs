@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF8A25E-5F98-4194-B33A-379D4AF01878}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HttpServer</RootNamespace>
+    <AssemblyName>HttpServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="thread\CustomThread.cs" />
+    <Compile Include="thread\CustomThreadManager.cs" />
+    <Compile Include="thread\ThreadHandler.cs" />
+    <Compile Include="websocket\AcceptWebSocketHandler.cs" />
+    <Compile Include="CacheItem.cs" />
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="commet\CommetRequest.cs" />
+    <Compile Include="commet\CommetResponse.cs" />
+    <Compile Include="commet\ServiceCommetController.cs" />
+    <Compile Include="HttpJsonpCommetHandler.cs" />
+    <Compile Include="HttpJsonpHandler.cs" />
+    <Compile Include="httplistener\IHttpRequestExSetter.cs" />
+    <Compile Include="WebSocketHandler.cs" />
+    <Compile Include="httplistener\HttpListenerContextEx.cs" />
+    <Compile Include="httplistener\HttpListenerRequestEx.cs" />
+    <Compile Include="httplistener\HttpListenerResponseEx.cs" />
+    <Compile Include="tcpclient\TcpListenerContext.cs" />
+    <Compile Include="tcpclient\TcpRequestEx.cs" />
+    <Compile Include="tcpclient\TcpResponseEx.cs" />
+    <Compile Include="tcpclient\TcpServer.cs" />
+    <Compile Include="HttpSwfHandler.cs" />
+    <Compile Include="ServiceController.cs" />
+    <Compile Include="commet\HttpCommetContext.cs" />
+    <Compile Include="commet\HttpCommetHandler.cs" />
+    <Compile Include="HttpServerBase.cs" />
+    <Compile Include="SessionItem.cs" />
+    <Compile Include="SessionManager.cs" />
+    <Compile Include="socket\HttpSocketContextEx.cs" />
+    <Compile Include="socket\HttpSocketRequestEx.cs" />
+    <Compile Include="socket\HttpSocketResponseEx.cs" />
+    <Compile Include="socket\HttpSocketServer.cs" />
+    <Compile Include="HttpAspxHandler.cs" />
+    <Compile Include="commet\HttpCommetManager.cs" />
+    <Compile Include="HttpCssHandler.cs" />
+    <Compile Include="HttpErrorHandler.cs" />
+    <Compile Include="HttpFileHandler.cs" />
+    <Compile Include="HttpHandlerBase.cs" />
+    <Compile Include="HttpHtmlHandler.cs" />
+    <Compile Include="HttpImageHandler.cs" />
+    <Compile Include="HttpJsonHandler.cs" />
+    <Compile Include="HttpMvcHandler.cs" />
+    <Compile Include="HttpScriptHandler.cs" />
+    <Compile Include="HttpServiceHlp.cs" />
+    <Compile Include="IAsyncResultEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="httplistener\HttpListenerServer.cs" />
+    <Compile Include="websocket\MyStream.cs" />
+    <Compile Include="websocket\WebSocketClient.cs" />
+    <Compile Include="websocket\WebSocketManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\aspnet_isapi.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreEx\CoreEx.4.0.csproj">
+      <Project>{760b8fff-071c-46a8-99d2-81144144db7e}</Project>
+      <Name>CoreEx.4.0</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MvcEx\MvcEx.4.0.csproj">
+      <Project>{d248b59a-568c-4a5c-84b5-8a8417d9bf77}</Project>
+      <Name>MvcEx.4.0</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

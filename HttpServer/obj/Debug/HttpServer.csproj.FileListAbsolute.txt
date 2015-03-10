@@ -1,0 +1,13 @@
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\HttpServer.dll.config
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\HttpServer.dll
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\HttpServer.pdb
+D:\Dropbox\Projects\C#\HttpServer\obj\Debug\HttpServer.dll
+D:\Dropbox\Projects\C#\HttpServer\obj\Debug\HttpServer.pdb
+D:\Dropbox\Projects\C#\HttpServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\MvcEx.dll
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\Newtonsoft.Json.dll
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\Newtonsoft.Json.pdb
+D:\Dropbox\Projects\C#\HttpServer\bin\Debug\MvcEx.pdb
+D:\Projects\C#\HttpServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\C#\HttpServer\obj\Debug\HttpServer.dll
+D:\Projects\C#\HttpServer\obj\Debug\HttpServer.pdb
