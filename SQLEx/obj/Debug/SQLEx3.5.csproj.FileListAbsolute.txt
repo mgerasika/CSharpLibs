@@ -1,5 +1,0 @@
-D:\Projects\C#\CSharpLibs\SQLEx\bin\Debug\SQLEx.dll
-D:\Projects\C#\CSharpLibs\SQLEx\bin\Debug\SQLEx.pdb
-D:\Projects\C#\CSharpLibs\SQLEx\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\C#\CSharpLibs\SQLEx\obj\Debug\SQLEx.dll
-D:\Projects\C#\CSharpLibs\SQLEx\obj\Debug\SQLEx.pdb
