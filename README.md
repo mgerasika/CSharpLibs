@@ -1,6 +1,7 @@
 # CSharpLibs
 Common libraries for many own projects.
--HttpServer - write own server based on HttpListener,TcpClient,WebSocket +Commet
+
+-HttpServer - write own server based on HttpListener,TcpClient,WebSocket and Commet 
 
 -MvcEx - write own version ov mvc pattern for web applications.
 
